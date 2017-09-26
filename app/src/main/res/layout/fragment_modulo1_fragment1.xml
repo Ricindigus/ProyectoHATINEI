@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/mod1_layoutFragment1"
+    android:focusableInTouchMode="true"
+    tools:context="pe.gob.inei.encuestahabilidades.fragments.Modulo1Fragment1">
+
+    <!-- TODO: Update blank fragment layout -->
+    <include layout="@layout/cabecera_titulo_layout"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include layout="@layout/cabecera_informante"/>
+            <include layout="@layout/modulo1_pregunta1"/>
+            <include layout="@layout/modulo1_pregunta2"/>
+            <include layout="@layout/modulo1_pregunta3"/>
+            <include layout="@layout/modulo1_pregunta4"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

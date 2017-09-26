@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/fab_margin"
+    android:padding="@dimen/margin15dp"
+    android:id="@+id/mod2_p22_lyt"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/borde_layout_preguntas"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mod2_p22"
+        android:layout_marginBottom="@dimen/fab_margin" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="2dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="2dp"
+                android:layout_weight="2"
+                android:background="@color/accent"
+                android:gravity="center"
+                android:text="Régimen Laboral Especial"
+                android:textColor="@color/icons"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:background="@color/accent"
+                android:gravity="center"
+                android:text="Régimen Laboral Especial"
+                android:textColor="@color/icons"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/accent"
+                android:gravity="center"
+                android:padding="1dp"
+                android:text="¿Para que porcentaje de sus trabajadores?"
+                android:textAlignment="center"
+                android:textColor="@color/icons"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="2dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mod2_p22_ck1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="2dp"
+                android:layout_weight="2"
+                android:background="@drawable/cajas_de_texto"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/margin5dp"
+                android:text="@string/mod2_p22_sp1" />
+
+            <RadioGroup
+                android:id="@+id/mod2_p22_rg1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/cajas_de_texto"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/mod2_p22_rbsi1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin10dp"
+                    android:text="SI" />
+                <RadioButton
+                    android:id="@+id/mod2_p22_rbno1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NO" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/mod2_p22_edt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/caja_redonda_disabled"
+                    android:inputType="numberPassword"
+                    android:enabled="false"
+                    android:maxLength="3" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="2dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mod2_p22_ck2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="2dp"
+                android:layout_weight="2"
+                android:background="@drawable/cajas_de_texto"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/margin5dp"
+                android:text="@string/mod2_p22_sp2" />
+
+            <RadioGroup
+                android:id="@+id/mod2_p22_rg2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/cajas_de_texto"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/mod2_p22_rbsi2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin10dp"
+                    android:text="SI" />
+                <RadioButton
+                    android:id="@+id/mod2_p22_rbno2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NO" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/mod2_p22_edt2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:enabled="false"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/caja_redonda_disabled"
+                    android:inputType="numberPassword"
+                    android:maxLength="3" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="2dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mod2_p22_ck3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="2dp"
+                android:layout_weight="2"
+                android:background="@drawable/cajas_de_texto"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/margin5dp"
+                android:text="@string/mod2_p22_sp3" />
+
+            <RadioGroup
+                android:id="@+id/mod2_p22_rg3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/cajas_de_texto"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/mod2_p22_rbsi3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin10dp"
+                    android:text="SI" />
+
+                <RadioButton
+                    android:id="@+id/mod2_p22_rbno3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NO" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/mod2_p22_edt3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:enabled="false"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/caja_redonda_disabled"
+                    android:inputType="numberPassword"
+                    android:maxLength="3" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="2dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mod2_p22_ck4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="2dp"
+                android:layout_weight="2"
+                android:background="@drawable/cajas_de_texto"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/margin5dp"
+                android:text="@string/mod2_p22_sp4" />
+
+            <RadioGroup
+                android:id="@+id/mod2_p22_rg4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/cajas_de_texto"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/mod2_p22_rbsi4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin10dp"
+                    android:text="SI" />
+
+                <RadioButton
+                    android:id="@+id/mod2_p22_rbno4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NO" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/mod2_p22_edt4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:enabled="false"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/caja_redonda_disabled"
+                    android:inputType="numberPassword"
+                    android:maxLength="3" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="2dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mod2_p22_ck5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="2dp"
+                android:layout_weight="2"
+                android:background="@drawable/cajas_de_texto"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/margin5dp"
+                android:text="@string/mod2_p22_sp5" />
+
+            <RadioGroup
+                android:id="@+id/mod2_p22_rg5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/cajas_de_texto"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/mod2_p22_rbsi5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin10dp"
+                    android:text="SI" />
+
+                <RadioButton
+                    android:id="@+id/mod2_p22_rbno5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NO" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/mod2_p22_edt5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:enabled="false"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/caja_redonda_disabled"
+                    android:inputType="numberPassword"
+                    android:maxLength="3" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:padding="@dimen/margin5dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/cajas_de_texto"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/mod2_p22_ck6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod2_p22_sp6" />
+
+                <EditText
+                    android:id="@+id/mod2_p22_edtEspecifique"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:enabled="false"
+                    android:inputType="text"
+                    android:background="@drawable/caja_redonda_disabled"
+                    android:hint="@string/especifique"
+                    android:paddingLeft="5dp" />
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/mod2_p22_rg6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/cajas_de_texto"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/mod2_p22_rbsi6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin10dp"
+                    android:text="SI" />
+                <RadioButton
+                    android:id="@+id/mod2_p22_rbno6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NO" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <EditText
+                    android:id="@+id/mod2_p22_edt6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:enabled="false"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/caja_redonda_disabled"
+                    android:inputType="numberPassword"
+                    android:maxLength="3"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:id="@+id/mod4_p4_ly"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/fab_margin"
+    android:padding="@dimen/margin15dp"
+    android:background="@drawable/borde_layout_preguntas"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:text="@string/mod4_p4" />
+
+    <RadioGroup
+        android:id="@+id/mod4_p4_rgb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:layout_margin="@dimen/margin10dp">
+        <RadioButton
+            android:id="@+id/mod4_p4_rgb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mod4_p4_sp1"/>
+        <RadioButton
+            android:id="@+id/mod4_p4_rgb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mod4_p4_sp2"/>
+        <RadioButton
+            android:id="@+id/mod4_p4_rgb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mod4_p4_sp3"/>
+        <RadioButton
+            android:id="@+id/mod4_p4_rgb4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mod4_p4_sp4"/>
+        <RadioButton
+            android:id="@+id/mod4_p4_rgb5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mod4_p4_sp5"/>
+    </RadioGroup>
+</LinearLayout>

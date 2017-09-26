@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_margin="@dimen/margin10dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/margin10dp"
+    android:id="@+id/mod8_p1_ly"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/border_layout_subpreguntas"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<TextView
+    android:id="@+id/mod8_p1_tv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:text="@string/mod8_p1"
+    android:layout_marginBottom="@dimen/margin5dp"/>
+<RadioGroup
+    android:id="@+id/mod8_p1_rg"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin10dp">
+    <RadioButton
+        android:id="@+id/mod8_p1_rb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Si"/>
+    <RadioButton
+        android:id="@+id/mod8_p1_rb2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No"/>
+</RadioGroup>
+<LinearLayout
+    android:id="@+id/mod8_p1_ly_a"
+    android:visibility="gone"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/margin10dp"
+    android:background="@drawable/border_layout_subpreguntas">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mod8_p1_sp0"
+        android:layout_marginBottom="@dimen/margin5dp"
+        android:textStyle="bold"/>
+    <RadioGroup
+        android:id="@+id/mod8_p1_rg_a"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/mod8_p1_rb1_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mod8_p1_op1"
+            android:layout_marginRight="@dimen/margin10dp"/>
+        <RadioButton
+            android:id="@+id/mod8_p1_rb2_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mod8_p1_op2"
+            android:layout_marginRight="@dimen/margin10dp"/>
+        <RadioButton
+            android:id="@+id/mod8_p1_rb3_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mod8_p1_op3"/>
+    </RadioGroup>
+</LinearLayout>
+</LinearLayout>

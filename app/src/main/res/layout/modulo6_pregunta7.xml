@@ -1,0 +1,1091 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/fab_margin"
+    android:padding="@dimen/margin15dp"
+    android:background="@drawable/borde_layout_preguntas"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mod6_p7"
+        android:layout_marginBottom="@dimen/fab_margin" />
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin10dp"
+                android:text="Medidas"
+                android:gravity="center"
+                android:background="@color/accent"
+                android:textColor="@color/icons"
+                android:layout_weight="1"
+                android:textStyle="bold"/>
+
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/mod6_p7_ly1"
+                android:layout_marginTop="1dp"
+                android:padding="@dimen/margin5dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cajas_de_texto">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin10dp"
+                    android:text="1. Directores y gerentes"
+                    android:layout_weight="1"
+                    android:textStyle="bold"/>
+
+                <CheckBox
+                    android:id="@+id/mod6_p7_1_ck1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp1"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_1_ck2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp2"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_1_ck3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp3"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_1_ck4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp4"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_1_ck5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp5"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_1_ck6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp6"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_1_ck7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp7"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_1_ck8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp8"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_1_ck9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp9"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_1_ck10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp10"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+
+                <LinearLayout
+                    android:id="@+id/mod6_p7_lytSp1"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin10dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="@dimen/margin10dp"
+                    android:layout_marginLeft="@dimen/margin10dp"
+                    android:background="@drawable/border_layout_subpreguntas">
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin15dp"
+                        android:text="Indique porqué no ha tomado ninguna medida?"/>
+
+                    <EditText
+                        android:id="@+id/mod6_p7_edt1"
+                        android:paddingLeft="@dimen/margin5dp"
+                        android:hint="@string/especifique"
+                        android:inputType="text"
+                        android:maxLength="300"
+                        android:background="@drawable/cajas_de_texto"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp" />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mod6_p7_ly2"
+                android:layout_marginTop="1dp"
+                android:padding="@dimen/margin5dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cajas_de_texto">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin10dp"
+                    android:text="2. Profesionales científicos e intelectuales"
+                    android:layout_weight="1"
+                    android:textStyle="bold"/>
+
+                <CheckBox
+                    android:id="@+id/mod6_p7_2_ck1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp1"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_2_ck2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp2"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_2_ck3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp3"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_2_ck4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp4"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_2_ck5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp5"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_2_ck6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp6"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_2_ck7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp7"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_2_ck8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp8"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_2_ck9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp9"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_2_ck10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp10"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+
+                <LinearLayout
+                    android:id="@+id/mod6_p7_lytSp2"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin10dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="@dimen/margin10dp"
+                    android:layout_marginLeft="@dimen/margin10dp"
+                    android:background="@drawable/border_layout_subpreguntas">
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin15dp"
+                        android:text="Indique porqué no ha tomado ninguna medida?"/>
+
+                    <EditText
+                        android:id="@+id/mod6_p7_edt2"
+                        android:paddingLeft="@dimen/margin5dp"
+                        android:hint="@string/especifique"
+                        android:inputType="text"
+                        android:maxLength="300"
+                        android:background="@drawable/cajas_de_texto"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp" />
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/mod6_p7_ly3"
+                android:layout_marginTop="1dp"
+                android:padding="@dimen/margin5dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cajas_de_texto">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin10dp"
+                    android:text="3. Profesionales técnicos"
+                    android:layout_weight="1"
+                    android:textStyle="bold"/>
+
+                <CheckBox
+                    android:id="@+id/mod6_p7_3_ck1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp1"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_3_ck2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp2"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_3_ck3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp3"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_3_ck4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp4"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_3_ck5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp5"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_3_ck6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp6"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_3_ck7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp7"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_3_ck8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp8"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_3_ck9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp9"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_3_ck10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp10"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+
+                <LinearLayout
+                    android:id="@+id/mod6_p7_lytSp3"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin10dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="@dimen/margin10dp"
+                    android:layout_marginLeft="@dimen/margin10dp"
+                    android:background="@drawable/border_layout_subpreguntas">
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin15dp"
+                        android:text="Indique porqué no ha tomado ninguna medida?"/>
+
+                    <EditText
+                        android:id="@+id/mod6_p7_edt3"
+                        android:paddingLeft="@dimen/margin5dp"
+                        android:hint="@string/especifique"
+                        android:inputType="text"
+                        android:maxLength="300"
+                        android:background="@drawable/cajas_de_texto"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp" />
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/mod6_p7_ly4"
+                android:layout_marginTop="1dp"
+                android:padding="@dimen/margin5dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cajas_de_texto">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin10dp"
+                    android:text="4. Jefes y empleados administrativos"
+                    android:layout_weight="1"
+                    android:textStyle="bold"/>
+
+                <CheckBox
+                    android:id="@+id/mod6_p7_4_ck1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp1"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_4_ck2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp2"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_4_ck3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp3"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_4_ck4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp4"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_4_ck5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp5"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_4_ck6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp6"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_4_ck7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp7"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_4_ck8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp8"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_4_ck9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp9"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_4_ck10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp10"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+
+                <LinearLayout
+                    android:id="@+id/mod6_p7_lytSp4"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin10dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="@dimen/margin10dp"
+                    android:layout_marginLeft="@dimen/margin10dp"
+                    android:background="@drawable/border_layout_subpreguntas">
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin15dp"
+                        android:text="Indique porqué no ha tomado ninguna medida?"/>
+
+                    <EditText
+                        android:id="@+id/mod6_p7_edt4"
+                        android:paddingLeft="@dimen/margin5dp"
+                        android:hint="@string/especifique"
+                        android:inputType="text"
+                        android:maxLength="300"
+                        android:background="@drawable/cajas_de_texto"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/mod6_p7_ly5"
+                android:layout_marginTop="1dp"
+                android:padding="@dimen/margin5dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cajas_de_texto">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin10dp"
+                    android:text="5. Trabajadores de servicios y vendedores de comercios y mercados"
+                    android:layout_weight="1"
+                    android:textStyle="bold"/>
+
+                <CheckBox
+                    android:id="@+id/mod6_p7_5_ck1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp1"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_5_ck2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp2"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_5_ck3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp3"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_5_ck4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp4"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_5_ck5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp5"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_5_ck6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp6"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_5_ck7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp7"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_5_ck8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp8"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_5_ck9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp9"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_5_ck10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp10"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+
+                <LinearLayout
+                    android:id="@+id/mod6_p7_lytSp5"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin10dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="@dimen/margin10dp"
+                    android:layout_marginLeft="@dimen/margin10dp"
+                    android:background="@drawable/border_layout_subpreguntas">
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin15dp"
+                        android:text="Indique porqué no ha tomado ninguna medida?"/>
+
+                    <EditText
+                        android:id="@+id/mod6_p7_edt5"
+                        android:paddingLeft="@dimen/margin5dp"
+                        android:hint="@string/especifique"
+                        android:inputType="text"
+                        android:maxLength="300"
+                        android:background="@drawable/cajas_de_texto"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/mod6_p7_ly6"
+                android:layout_marginTop="1dp"
+                android:padding="@dimen/margin5dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cajas_de_texto">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin10dp"
+                    android:text="6. Agricultores y trabajadores calificados agropecuarios, forestales y pesqueros"
+                    android:layout_weight="1"
+                    android:textStyle="bold"/>
+
+                <CheckBox
+                    android:id="@+id/mod6_p7_6_ck1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp1"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_6_ck2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp2"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_6_ck3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp3"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_6_ck4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp4"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_6_ck5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp5"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_6_ck6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp6"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_6_ck7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp7"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_6_ck8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp8"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_6_ck9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp9"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_6_ck10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp10"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+
+                <LinearLayout
+                    android:id="@+id/mod6_p7_lytSp6"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin10dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="@dimen/margin10dp"
+                    android:layout_marginLeft="@dimen/margin10dp"
+                    android:background="@drawable/border_layout_subpreguntas">
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin15dp"
+                        android:text="Indique porqué no ha tomado ninguna medida?"/>
+
+                    <EditText
+                        android:id="@+id/mod6_p7_edt6"
+                        android:paddingLeft="@dimen/margin5dp"
+                        android:hint="@string/especifique"
+                        android:inputType="text"
+                        android:maxLength="300"
+                        android:background="@drawable/cajas_de_texto"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/mod6_p7_ly7"
+                android:layout_marginTop="1dp"
+                android:padding="@dimen/margin5dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cajas_de_texto">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin10dp"
+                    android:text="7. Trabajadores de la construcción, edificación, productos artesanales, electricidad y las telecomunicaciones"
+                    android:layout_weight="1"
+                    android:textStyle="bold"/>
+
+                <CheckBox
+                    android:id="@+id/mod6_p7_7_ck1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp1"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_7_ck2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp2"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_7_ck3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp3"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_7_ck4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp4"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_7_ck5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp5"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_7_ck6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp6"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_7_ck7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp7"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_7_ck8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp8"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_7_ck9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp9"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_7_ck10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp10"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <LinearLayout
+                    android:id="@+id/mod6_p7_lytSp7"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin10dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="@dimen/margin10dp"
+                    android:layout_marginLeft="@dimen/margin10dp"
+                    android:background="@drawable/border_layout_subpreguntas">
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin15dp"
+                        android:text="Indique porqué no ha tomado ninguna medida?"/>
+
+                    <EditText
+                        android:id="@+id/mod6_p7_edt7"
+                        android:paddingLeft="@dimen/margin5dp"
+                        android:hint="@string/especifique"
+                        android:inputType="text"
+                        android:maxLength="300"
+                        android:background="@drawable/cajas_de_texto"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/mod6_p7_ly8"
+                android:layout_marginTop="1dp"
+                android:padding="@dimen/margin5dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cajas_de_texto">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin10dp"
+                    android:text="8. Operadores de maquinaria industrial, ensambladores y conductores de transporte"
+                    android:layout_weight="1"
+                    android:textStyle="bold"/>
+
+                <CheckBox
+                    android:id="@+id/mod6_p7_8_ck1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp1"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_8_ck2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp2"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_8_ck3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp3"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_8_ck4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp4"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_8_ck5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp5"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_8_ck6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp6"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_8_ck7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp7"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_8_ck8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp8"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_8_ck9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp9"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_8_ck10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp10"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+
+                <LinearLayout
+                    android:id="@+id/mod6_p7_lytSp8"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin10dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="@dimen/margin10dp"
+                    android:layout_marginLeft="@dimen/margin10dp"
+                    android:background="@drawable/border_layout_subpreguntas">
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin15dp"
+                        android:text="Indique porqué no ha tomado ninguna medida?"/>
+
+                    <EditText
+                        android:id="@+id/mod6_p7_edt8"
+                        android:paddingLeft="@dimen/margin5dp"
+                        android:hint="@string/especifique"
+                        android:inputType="text"
+                        android:maxLength="300"
+                        android:background="@drawable/cajas_de_texto"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/mod6_p7_ly9"
+                android:layout_marginTop="1dp"
+                android:padding="@dimen/margin5dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cajas_de_texto">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin10dp"
+                    android:text="9. Ocupaciones elementales"
+                    android:layout_weight="1"
+                    android:textStyle="bold"/>
+
+                <CheckBox
+                    android:id="@+id/mod6_p7_9_ck1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp1"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_9_ck2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp2"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_9_ck3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp3"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_9_ck4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp4"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_9_ck5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp5"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_9_ck6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp6"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_9_ck7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp7"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_9_ck8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp8"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_9_ck9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp9"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+                <CheckBox
+                    android:id="@+id/mod6_p7_9_ck10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod6_p7_sp10"
+                    android:layout_marginBottom="@dimen/margin10dp"/>
+
+                <LinearLayout
+                    android:id="@+id/mod6_p7_lytSp9"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin10dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="@dimen/margin10dp"
+                    android:layout_marginLeft="@dimen/margin10dp"
+                    android:background="@drawable/border_layout_subpreguntas">
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin15dp"
+                        android:text="Indique porqué no ha tomado ninguna medida?"/>
+
+                    <EditText
+                        android:id="@+id/mod6_p7_edt9"
+                        android:paddingLeft="@dimen/margin5dp"
+                        android:hint="@string/especifique"
+                        android:inputType="text"
+                        android:maxLength="300"
+                        android:background="@drawable/cajas_de_texto"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

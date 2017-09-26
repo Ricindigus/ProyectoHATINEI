@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/dialog_finalizar_encuesta_lyt"
+        android:orientation="vertical"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="@drawable/border_layout_subpreguntas">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seleccione el resultado de la encuesta:"
+            android:layout_marginTop="@dimen/margin10dp"/>
+        <LinearLayout
+            android:layout_marginBottom="@dimen/margin5dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/fondo_spinner">
+            <Spinner
+                android:id="@+id/dialog_finalizar_encuesta_sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/array_resultado_visita"/>
+        </LinearLayout>
+        <EditText
+            android:id="@+id/dialog_finalizar_encuesta_edt"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:inputType="text"
+            android:paddingLeft="5dp"
+            android:maxLength="300"
+            android:enabled="false"
+            android:hint="Especifique"
+            android:layout_marginTop="@dimen/margin5dp"
+            android:background="@drawable/fondo_edit_text_disabled"/>
+    </LinearLayout>
+
+</LinearLayout>

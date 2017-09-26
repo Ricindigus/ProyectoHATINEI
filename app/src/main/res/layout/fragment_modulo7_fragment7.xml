@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/mod7_layoutFragment7"
+    android:focusableInTouchMode="true"
+    tools:context="pe.gob.inei.encuestahabilidades.fragments.Modulo7Fragment7">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/txtCabecera"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/modulo7_nombre"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/icons"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:padding="@dimen/fab_margin"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include layout="@layout/modulo7_pregunta18"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

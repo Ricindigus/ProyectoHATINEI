@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/mod3_layoutFragment1"
+    android:focusableInTouchMode="true"
+    tools:context="pe.gob.inei.encuestahabilidades.fragments.Modulo1Fragment1">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/txtCabecera"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/modulo3_nombre"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/icons"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:padding="@dimen/fab_margin"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/mod3_txtCabecera"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin5dp"
+                android:layout_marginRight="@dimen/margin10dp"
+                android:layout_marginLeft="@dimen/margin10dp"
+                android:layout_marginTop="@dimen/margin10dp"
+                android:text="A continuación quisiera hacerle algunas preguntas acerca de las actividades que realiza esta empresa. Esto tiene como objetivo que podamos contextualizar sus respuestas posteriores sobre recursos humanos y temas de habilidades. Si no puede dar una respuesta precisa, por favor dé su mejor estimación."
+                android:background="@drawable/cajas_de_texto"/>
+            <include layout="@layout/cabecera_informante"/>
+            <include layout="@layout/modulo3_pregunta1"/>
+            <include layout="@layout/modulo3_pregunta2"/>
+            <include layout="@layout/modulo3_pregunta3"/>
+            <include layout="@layout/modulo3_pregunta4"/>
+            <include layout="@layout/modulo3_pregunta5"/>
+            <include layout="@layout/modulo3_pregunta6"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

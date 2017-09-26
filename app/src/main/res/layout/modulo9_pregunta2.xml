@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/fab_margin"
+    android:padding="@dimen/margin15dp"
+    android:id="@+id/mod9_p2_lyt"
+    android:background="@drawable/borde_layout_preguntas"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mod9_p2"
+        android:layout_marginBottom="@dimen/fab_margin"/>
+    <RadioGroup
+        android:id="@+id/mod9_p2_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin10dp">
+        <RadioButton
+            android:id="@+id/mod9_p2_rb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mod9_p2_sp1"/>
+        <RadioButton
+            android:id="@+id/mod9_p2_rb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mod9_p2_sp2"/>
+        <RadioButton
+            android:id="@+id/mod9_p2_rb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mod9_p2_sp3"/>
+    </RadioGroup>
+</LinearLayout>

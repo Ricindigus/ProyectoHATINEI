@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="pe.gob.inei.encuestahabilidades.activities.EnhatrapeActivity"
+    tools:showIn="@layout/app_bar_enhatrape">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <!--<android.support.v4.view.ViewPager-->
+                <!--android:id="@+id/container_enhatrape"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent" />-->
+            <LinearLayout
+                android:id="@+id/container_encuesta_enhatrape"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/relative_aux"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_alignParentTop="true">
+                <Button
+                    android:id="@+id/btn_anterior"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:text="Ant"
+                    android:textColor="@android:color/white" />
+                <LinearLayout
+                    android:id="@+id/layoutDots"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"></LinearLayout>
+                <Button
+                    android:id="@+id/btn_siguiente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:text="Sig"
+                    android:gravity="center"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:alpha=".5"
+                android:layout_below="@id/relative_aux"
+                android:background="@android:color/white" />
+        </FrameLayout>
+</LinearLayout>

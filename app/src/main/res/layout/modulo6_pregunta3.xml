@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/fab_margin"
+    android:padding="@dimen/margin15dp"
+    android:background="@drawable/borde_layout_preguntas"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mod6_p3"
+        android:layout_marginBottom="@dimen/fab_margin" />
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/accent"
+        android:gravity="center"
+        android:padding="@dimen/margin10dp"
+        android:text="Grandes grupos ocupacionales según CNO 2015"
+        android:textColor="@color/icons"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/cajas_de_texto"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:text="Ingresa información en:" />
+
+        <RadioGroup
+            android:id="@+id/mod6_p3_rgb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/mod6_p3_rb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="N° personas ocupadas" />
+
+            <!--<RadioButton-->
+                <!--android:id="@+id/mod6_p3_rb2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="% personas ocupadas" />-->
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/mod6_p3_ly1"
+            android:focusableInTouchMode="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/cajas_de_texto"
+            android:orientation="vertical"
+            android:padding="@dimen/margin10dp">
+
+            <CheckBox
+                android:id="@+id/mod6_p3_ck1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mod5_p1_sp1"
+                android:textSize="@dimen/textoSmall"
+                android:enabled="false"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp"
+                android:text="@string/mod5_p1_sp1_desc" />
+            <TextView
+                android:id="@+id/mod6_p3_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="Total:"
+                android:padding="@dimen/margin5dp"
+                android:layout_marginTop="@dimen/margin10dp"
+                android:background="@drawable/caja_texto_redonda"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="@dimen/margin10dp"
+                android:background="@drawable/caja_texto_redonda"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin10dp"
+                    android:gravity="center_vertical"
+                    android:text="Elección" />
+
+                <EditText
+                    android:id="@+id/mod6_p3_edt1"
+                    android:enabled="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/fondo_edit_text_disabled"
+                    android:inputType="numberPassword"
+                    android:maxLength="5"
+                    android:paddingLeft="5dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mod6_p3_ly2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/cajas_de_texto"
+            android:orientation="vertical"
+            android:padding="@dimen/margin10dp">
+
+            <CheckBox
+                android:id="@+id/mod6_p3_ck2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mod5_p1_sp2"
+                android:textSize="@dimen/textoSmall"
+                android:enabled="false"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp"
+                android:text="@string/mod5_p1_sp2_desc" />
+            <TextView
+                android:id="@+id/mod6_p3_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="Total:"
+                android:padding="@dimen/margin5dp"
+                android:layout_marginTop="@dimen/margin10dp"
+                android:background="@drawable/caja_texto_redonda"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="@dimen/margin10dp"
+                android:background="@drawable/caja_texto_redonda"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin10dp"
+                    android:gravity="center_vertical"
+                    android:text="Elección" />
+
+                <EditText
+                    android:id="@+id/mod6_p3_edt2"
+                    android:enabled="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/fondo_edit_text_disabled"                    android:inputType="numberPassword"
+                    android:maxLength="5"
+                    android:paddingLeft="5dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mod6_p3_ly3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/cajas_de_texto"
+            android:orientation="vertical"
+            android:padding="@dimen/margin10dp">
+
+            <CheckBox
+                android:id="@+id/mod6_p3_ck3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mod5_p1_sp3"
+                android:textSize="@dimen/textoSmall"
+                android:enabled="false"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp"
+                android:text="@string/mod5_p1_sp3_desc" />
+            <TextView
+                android:id="@+id/mod6_p3_tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="Total:"
+                android:padding="@dimen/margin5dp"
+                android:layout_marginTop="@dimen/margin10dp"
+                android:background="@drawable/caja_texto_redonda"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="@dimen/margin10dp"
+                android:background="@drawable/caja_texto_redonda"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin10dp"
+                    android:gravity="center_vertical"
+                    android:text="Elección" />
+
+                <EditText
+                    android:id="@+id/mod6_p3_edt3"
+                    android:enabled="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/fondo_edit_text_disabled"                    android:inputType="numberPassword"
+                    android:maxLength="5"
+                    android:paddingLeft="5dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mod6_p3_ly4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/cajas_de_texto"
+            android:orientation="vertical"
+            android:padding="@dimen/margin10dp">
+
+            <CheckBox
+                android:id="@+id/mod6_p3_ck4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mod5_p1_sp4"
+                android:textSize="@dimen/textoSmall"
+                android:enabled="false"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp"
+                android:text="@string/mod5_p1_sp4_desc" />
+            <TextView
+                android:id="@+id/mod6_p3_tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="Total:"
+                android:padding="@dimen/margin5dp"
+                android:layout_marginTop="@dimen/margin10dp"
+                android:background="@drawable/caja_texto_redonda"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="@dimen/margin10dp"
+                android:background="@drawable/caja_texto_redonda"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin10dp"
+                    android:gravity="center_vertical"
+                    android:text="Elección" />
+
+                <EditText
+                    android:id="@+id/mod6_p3_edt4"
+                    android:enabled="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/fondo_edit_text_disabled"                    android:inputType="numberPassword"
+                    android:maxLength="5"
+                    android:paddingLeft="5dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mod6_p3_ly5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/cajas_de_texto"
+            android:orientation="vertical"
+            android:padding="@dimen/margin10dp">
+
+            <CheckBox
+                android:id="@+id/mod6_p3_ck5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mod5_p1_sp5"
+                android:textSize="@dimen/textoSmall"
+                android:enabled="false"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp"
+                android:text="@string/mod5_p1_sp5_desc" />
+            <TextView
+                android:id="@+id/mod6_p3_tv5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="Total:"
+                android:padding="@dimen/margin5dp"
+                android:layout_marginTop="@dimen/margin10dp"
+                android:background="@drawable/caja_texto_redonda"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="@dimen/margin10dp"
+                android:background="@drawable/caja_texto_redonda"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin10dp"
+                    android:gravity="center_vertical"
+                    android:text="Elección" />
+
+                <EditText
+                    android:id="@+id/mod6_p3_edt5"
+                    android:enabled="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/fondo_edit_text_disabled"                    android:inputType="numberPassword"
+                    android:maxLength="5"
+                    android:paddingLeft="5dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mod6_p3_ly6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/cajas_de_texto"
+            android:orientation="vertical"
+            android:padding="@dimen/margin10dp">
+
+            <CheckBox
+                android:id="@+id/mod6_p3_ck6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mod5_p1_sp6"
+                android:textSize="@dimen/textoSmall"
+                android:enabled="false"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp"
+                android:text="@string/mod5_p1_sp6_desc" />
+            <TextView
+                android:id="@+id/mod6_p3_tv6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="Total:"
+                android:padding="@dimen/margin5dp"
+                android:layout_marginTop="@dimen/margin10dp"
+                android:background="@drawable/caja_texto_redonda"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="@dimen/margin10dp"
+                android:background="@drawable/caja_texto_redonda"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin10dp"
+                    android:gravity="center_vertical"
+                    android:text="Elección" />
+
+                <EditText
+                    android:id="@+id/mod6_p3_edt6"
+                    android:enabled="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/fondo_edit_text_disabled"                    android:inputType="numberPassword"
+                    android:maxLength="5"
+                    android:paddingLeft="5dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mod6_p3_ly7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/cajas_de_texto"
+            android:orientation="vertical"
+            android:padding="@dimen/margin10dp">
+
+            <CheckBox
+                android:id="@+id/mod6_p3_ck7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mod5_p1_sp7"
+                android:textSize="@dimen/textoSmall"
+                android:enabled="false"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp"
+                android:text="@string/mod5_p1_sp7_desc" />
+            <TextView
+                android:id="@+id/mod6_p3_tv7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="Total:"
+                android:padding="@dimen/margin5dp"
+                android:layout_marginTop="@dimen/margin10dp"
+                android:background="@drawable/caja_texto_redonda"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="@dimen/margin10dp"
+                android:background="@drawable/caja_texto_redonda"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin10dp"
+                    android:gravity="center_vertical"
+                    android:text="Elección" />
+
+                <EditText
+                    android:id="@+id/mod6_p3_edt7"
+                    android:enabled="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/fondo_edit_text_disabled"                    android:inputType="numberPassword"
+                    android:maxLength="5"
+                    android:paddingLeft="5dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mod6_p3_ly8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/cajas_de_texto"
+            android:orientation="vertical"
+            android:padding="@dimen/margin10dp">
+
+            <CheckBox
+                android:id="@+id/mod6_p3_ck8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mod5_p1_sp8"
+                android:textSize="@dimen/textoSmall"
+                android:enabled="false"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp"
+                android:text="@string/mod5_p1_sp8_desc" />
+            <TextView
+                android:id="@+id/mod6_p3_tv8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="Total:"
+                android:padding="@dimen/margin5dp"
+                android:layout_marginTop="@dimen/margin10dp"
+                android:background="@drawable/caja_texto_redonda"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="@dimen/margin10dp"
+                android:background="@drawable/caja_texto_redonda"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin10dp"
+                    android:gravity="center_vertical"
+                    android:text="Elección" />
+
+                <EditText
+                    android:id="@+id/mod6_p3_edt8"
+                    android:enabled="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/fondo_edit_text_disabled"                    android:inputType="numberPassword"
+                    android:maxLength="5"
+                    android:paddingLeft="5dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mod6_p3_ly9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/cajas_de_texto"
+            android:orientation="vertical"
+            android:padding="@dimen/margin10dp">
+
+            <CheckBox
+                android:id="@+id/mod6_p3_ck9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mod5_p1_sp9"
+                android:textSize="@dimen/textoSmall"
+                android:enabled="false"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp"
+                android:text="@string/mod5_p1_sp9_desc" />
+            <TextView
+                android:id="@+id/mod6_p3_tv9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="Total:"
+                android:padding="@dimen/margin5dp"
+                android:layout_marginTop="@dimen/margin10dp"
+                android:background="@drawable/caja_texto_redonda"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="@dimen/margin10dp"
+                android:background="@drawable/caja_texto_redonda"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin10dp"
+                    android:gravity="center_vertical"
+                    android:text="Elección" />
+
+                <EditText
+                    android:id="@+id/mod6_p3_edt9"
+                    android:enabled="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/fondo_edit_text_disabled"
+                    android:inputType="numberPassword"
+                    android:maxLength="5"
+                    android:paddingLeft="5dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="1dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:text="TOTAL PERSONAS"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:background="@color/accent"/>
+        <TextView
+            android:id="@+id/mod6_p3_tv10"
+            android:text="0"
+            android:gravity="center"
+            android:background="@drawable/cajas_de_texto"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"/>
+
+    </LinearLayout>
+</LinearLayout>

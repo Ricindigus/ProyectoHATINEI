@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/fab_margin"
+    android:padding="@dimen/margin15dp"
+    android:background="@drawable/borde_layout_preguntas"
+    android:id="@+id/mod1_p2_lyt"
+    android:focusableInTouchMode="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@+id/mod1_p2_txtPregunta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/modulo1_pregunta2"
+        android:layout_marginBottom="@dimen/fab_margin"
+        />
+    <LinearLayout
+        android:id="@+id/mod1_p2_lyt1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:padding="@dimen/margin10dp"
+        android:layout_margin="@dimen/margin5dp"
+        android:background="@drawable/border_layout_subpreguntas">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Actividad Secundaria 1"
+            android:layout_marginBottom="@dimen/margin5dp"/>
+
+        <EditText
+            android:id="@+id/mod1_p2_edt1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="@dimen/margin10dp"
+            android:background="@drawable/fondo_edit_text"
+            android:inputType="text"
+            android:completionThreshold="1"
+            android:maxLength="300"
+            android:paddingLeft="@dimen/margin5dp"
+            android:layout_marginLeft="@dimen/margin5dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/codigo_ciiu"
+                android:textColor="@color/primary_text"
+                android:layout_marginRight="@dimen/margin10dp"/>
+            <TextView
+                android:id="@+id/mod1_p2_txt1"
+                android:paddingLeft="@dimen/margin5dp"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_marginRight="@dimen/margin10dp"
+                android:background="@drawable/fondo_edit_text"/>
+            <AutoCompleteTextView
+                android:id="@+id/mod1_p2_auto1"
+                android:layout_width="match_parent"
+                android:paddingLeft="@dimen/margin5dp"
+                android:layout_height="30dp"
+                android:background="@drawable/fondo_edit_text"
+                android:inputType="text"
+                android:completionThreshold="1"
+                android:maxLength="300"
+                android:layout_marginRight="@dimen/margin10dp" />
+        </LinearLayout>
+        <CheckBox
+            android:id="@+id/mod1_p2_ck1"
+            android:layout_marginTop="@dimen/margin5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No tengo otra actividad secundaria 1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mod1_p2_lyt2"
+        android:orientation="vertical"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin10dp"
+        android:layout_margin="@dimen/margin5dp"
+        android:background="@drawable/border_layout_subpreguntas">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Actividad Secundaria 2"
+            android:layout_marginBottom="@dimen/margin5dp"/>
+        <EditText
+            android:id="@+id/mod1_p2_edt2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:completionThreshold="1"
+            android:layout_marginBottom="@dimen/margin10dp"
+            android:background="@drawable/fondo_edit_text"
+            android:inputType="text"
+            android:maxLength="300"
+            android:paddingLeft="@dimen/margin5dp"
+            android:layout_marginLeft="@dimen/margin5dp" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/codigo_ciiu"
+                android:textColor="@color/primary_text"
+                android:layout_marginRight="@dimen/margin10dp"/>
+            <TextView
+                android:id="@+id/mod1_p2_txt2"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:paddingLeft="@dimen/margin5dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:background="@drawable/fondo_edit_text"
+                android:layout_marginRight="@dimen/margin10dp"/>
+            <AutoCompleteTextView
+                android:id="@+id/mod1_p2_auto2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:completionThreshold="1"
+                android:layout_marginBottom="@dimen/margin10dp"
+                android:background="@drawable/fondo_edit_text"
+                android:inputType="text"
+                android:maxLength="300"
+                android:paddingLeft="@dimen/margin5dp" />
+        </LinearLayout>
+        <CheckBox
+            android:id="@+id/mod1_p2_ck2"
+            android:layout_marginTop="@dimen/margin5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No tengo otra actividad secundaria2"/>
+    </LinearLayout>
+
+</LinearLayout>

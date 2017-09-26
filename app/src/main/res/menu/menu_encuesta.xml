@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:title="Carátula"
+            android:id="@+id/opcion_1"
+            android:checked="false"
+            />
+        <item android:title="Visitas"
+            android:id="@+id/opcion_2"
+            android:checked="false"
+            />
+        <item android:title="Inicio Encuesta"
+            android:id="@+id/opcion_3"
+            android:checked="false"
+            />
+        <item android:title="ModuloI_P1-P4"
+            android:id="@+id/opcion_4"
+            android:checked="false"
+            />
+        <item android:title="ModuloI_P5-P8"
+            android:id="@+id/opcion_5"
+            android:checked="false"
+            />
+        <item android:title="ModuloI_P9-P12"
+            android:id="@+id/opcion_6"
+            android:checked="false"
+            />
+        <item android:title="Modulo II_P1-P5"
+            android:id="@+id/opcion_7"
+            android:checked="false"
+            />
+        <item android:title="Modulo II_P6-P10"
+            android:id="@+id/opcion_8"
+            android:checked="false"
+            />
+        <item android:title="Modulo II_P10-P12"
+            android:id="@+id/opcion_9"
+            android:checked="false"
+            />
+        <item android:title="Modulo II_P11-P13"
+            android:id="@+id/opcion_10"
+            android:checked="false"
+            />
+        <item android:title="Modulo II_P14-P17"
+            android:id="@+id/opcion_11"
+            android:checked="false"
+            />
+        <item android:title="Modulo II_P18-P20"
+            android:id="@+id/opcion_12"
+            android:checked="false"
+            />
+        <item android:title="Modulo II_P21-P25"
+            android:id="@+id/opcion_13"
+            android:checked="false"
+            />
+        <item android:title="Modulo III_P1-P6"
+            android:id="@+id/opcion_14"
+            android:checked="false"
+            />
+        <item android:title="Modulo III_P7-P10"
+            android:id="@+id/opcion_15"
+            android:checked="false"
+            />
+        <item android:title="Modulo III_P11-P12"
+            android:id="@+id/opcion_16"
+            android:checked="false"
+            />
+        <item android:title="Modulo IV_P1-P3"
+            android:id="@+id/opcion_17"
+            android:checked="false"
+            />
+        <item android:title="Modulo IV_P4-P7"
+            android:id="@+id/opcion_18"
+            android:checked="false"
+            />
+        <item android:title="Modulo IV_P8-P10"
+            android:id="@+id/opcion_19"
+            android:checked="false"
+            />
+        <item android:title="Modulo V_P1"
+            android:id="@+id/opcion_20"
+            android:checked="false"
+            />
+        <item android:title="Modulo V_P2"
+            android:id="@+id/opcion_21"
+            android:checked="false"
+            />
+        <item android:title="Modulo V_P3"
+            android:id="@+id/opcion_22"
+            android:checked="false"
+            />
+        <item android:title="Modulo V_P4_P6"
+            android:id="@+id/opcion_23"
+            android:checked="false"
+            />
+        <item android:title="Modulo V_P7"
+            android:id="@+id/opcion_24"
+            android:checked="false"
+            />
+        <item android:title="Modulo V_P8_P27"
+            android:id="@+id/opcion_25"
+            android:checked="false"
+            />
+        <item android:title="Modulo VI_P1_P3"
+            android:id="@+id/opcion_26"
+            android:checked="false"
+            />
+        <item android:title="Modulo VI_P4_P5"
+            android:id="@+id/opcion_27"
+            android:checked="false"
+            />
+        <item android:title="Modulo VI_P6_P7"
+            android:id="@+id/opcion_28"
+            android:checked="false"
+            />
+        <item android:title="Modulo VI_P8_P11"
+            android:id="@+id/opcion_29"
+            android:checked="false"
+            />
+        <item android:title="Modulo VII_P1_P4"
+            android:id="@+id/opcion_30"
+            android:checked="false"
+            />
+        <item android:title="Modulo VII_P5_P7"
+            android:id="@+id/opcion_31"
+            android:checked="false"
+            />
+        <item android:title="Modulo VII_P8"
+            android:id="@+id/opcion_32"
+            android:checked="false"
+            />
+        <item android:title="Modulo VII_P9"
+            android:id="@+id/opcion_33"
+            android:checked="false"
+            />
+        <item android:title="Modulo VII_P10_P14"
+            android:id="@+id/opcion_34"
+            android:checked="false"
+            />
+        <item android:title="Modulo VII_P15_P17"
+            android:id="@+id/opcion_35"
+            android:checked="false"
+            />
+        <item android:title="Modulo VII_P18"
+            android:id="@+id/opcion_36"
+            android:checked="false"
+            />
+        <item android:title="Modulo VII_P19_P21"
+            android:id="@+id/opcion_37"
+            android:checked="false"
+            />
+        <item android:title="Modulo VII_P22"
+            android:id="@+id/opcion_38"
+            android:checked="false"
+            />
+        <item android:title="Modulo VII_P23_P25"
+            android:id="@+id/opcion_39"
+            android:checked="false"
+            />
+        <item android:title="Modulo VII_P26"
+            android:id="@+id/opcion_40"
+            android:checked="false"
+            />
+        <item android:title="Modulo VII_P27_P30"
+            android:id="@+id/opcion_41"
+            android:checked="false"
+            />
+        <item android:title="Modulo VII_P31"
+            android:id="@+id/opcion_42"
+            android:checked="false"
+            />
+        <item android:title="Modulo VII_P32_P36"
+            android:id="@+id/opcion_43"
+            android:checked="false"
+            />
+        <item android:title="Modulo VII_P37_P39"
+            android:id="@+id/opcion_44"
+            android:checked="false"
+            />
+        <item android:title="Modulo VII_P40_P43"
+            android:id="@+id/opcion_45"
+            android:checked="false"
+            />
+        <item android:title="Modulo VII_P44_P46"
+            android:id="@+id/opcion_46"
+            android:checked="false"
+            />
+        <item android:title="Modulo VIII_P1"
+            android:id="@+id/opcion_47"
+            android:checked="false"
+            />
+        <item android:title="Modulo VIII_P2"
+            android:id="@+id/opcion_48"
+            android:checked="false"
+            />
+        <item android:title="Modulo VIII_P3"
+            android:id="@+id/opcion_49"
+            android:checked="false"
+            />
+        <item android:title="Modulo VIII_P4"
+            android:id="@+id/opcion_50"
+            android:checked="false"
+            />
+        <item android:title="Modulo VIII_P5"
+            android:id="@+id/opcion_51"
+            android:checked="false"
+            />
+        <item android:title="Modulo VIII_P6"
+            android:id="@+id/opcion_52"
+            android:checked="false"
+            />
+        <item android:title="Modulo VIII_P7"
+            android:id="@+id/opcion_53"
+            android:checked="false"
+            />
+        <item android:title="Modulo VIII_P8"
+            android:id="@+id/opcion_54"
+            android:checked="false"
+            />
+        <item android:title="Modulo VIII_P9"
+            android:id="@+id/opcion_55"
+            android:checked="false"
+            />
+        <item android:title="Modulo VIII_P10"
+            android:id="@+id/opcion_56"
+            android:checked="false"
+            />
+        <item android:title="Modulo IX_P1_P3"
+            android:id="@+id/opcion_57"
+            android:checked="false"
+            />
+    </group>
+</menu>

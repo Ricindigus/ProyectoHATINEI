@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/fab_margin"
+    android:padding="@dimen/margin15dp"
+    android:id="@+id/mod2_p13_lyt"
+    android:background="@drawable/borde_layout_preguntas"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mod2_p13"
+        android:layout_marginBottom="@dimen/fab_margin" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mod2_p13_1"
+        android:textStyle="italic"
+        android:layout_marginBottom="@dimen/fab_margin" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="5"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:text="Razones"
+                android:textColor="@color/icons"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="2"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:text="Orden de importancia"
+                android:textColor="@color/icons"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/mod2_p13_ck1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin10dp"
+                android:layout_weight="5"
+                android:text="@string/mod2_p13_sp1" />
+
+            <LinearLayout
+                android:id="@+id/mod2_p13_lytSp1"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="2"
+                android:orientation="vertical">
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/mod2_p13_ck2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin10dp"
+                android:layout_weight="5"
+                android:text="@string/mod2_p13_sp2" />
+
+            <LinearLayout
+                android:id="@+id/mod2_p13_lytSp2"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="2"
+                android:background="@drawable/fondo_spinner_disabled">
+                <Spinner
+                    android:id="@+id/mod2_p13_sp2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawSelectorOnTop="true"
+                    android:entries="@array/financiamiento_p38"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/mod2_p13_ck3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin10dp"
+                android:layout_weight="5"
+                android:text="@string/mod2_p13_sp3" />
+
+            <LinearLayout
+                android:id="@+id/mod2_p13_lytSp3"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="2"
+                android:background="@drawable/fondo_spinner_disabled">
+                <Spinner
+                    android:id="@+id/mod2_p13_sp3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawSelectorOnTop="true"
+                    android:entries="@array/financiamiento_p38"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/mod2_p13_ck4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin10dp"
+                android:layout_weight="5"
+                android:text="@string/mod2_p13_sp4" />
+
+            <LinearLayout
+                android:id="@+id/mod2_p13_lytSp4"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="2"
+                android:background="@drawable/fondo_spinner_disabled">
+
+                <Spinner
+                    android:id="@+id/mod2_p13_sp4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawSelectorOnTop="true"
+                    android:entries="@array/financiamiento_p38"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/mod2_p13_ck5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin10dp"
+                android:layout_weight="5"
+                android:text="@string/mod2_p13_sp5" />
+
+            <LinearLayout
+                android:id="@+id/mod2_p13_lytSp5"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="2"
+                android:background="@drawable/fondo_spinner_disabled">
+
+                <Spinner
+                    android:id="@+id/mod2_p13_sp5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawSelectorOnTop="true"
+                    android:entries="@array/financiamiento_p38"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/mod2_p13_ck6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin10dp"
+                android:layout_weight="5"
+                android:text="@string/mod2_p13_sp6" />
+
+            <LinearLayout
+                android:id="@+id/mod2_p13_lytSp6"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="2"
+                android:background="@drawable/fondo_spinner_disabled">
+
+                <Spinner
+                    android:id="@+id/mod2_p13_sp6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawSelectorOnTop="true"
+                    android:entries="@array/financiamiento_p38"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/mod2_p13_ck7"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mod2_p13_sp7" />
+
+                <EditText
+                    android:id="@+id/mod2_p13_edtEspecifique"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/fondo_edit_text_disabled"
+                    android:hint="@string/especifique"
+                    android:inputType="text"
+                    android:maxLength="200"
+                    android:enabled="false"
+                    android:paddingLeft="@dimen/margin5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mod2_p13_lytSp7"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="@dimen/margin15dp"
+                android:layout_weight="2"
+                android:background="@drawable/fondo_spinner_disabled">
+
+                <Spinner
+                    android:id="@+id/mod2_p13_sp7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawSelectorOnTop="true"
+                    android:entries="@array/financiamiento_p38"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

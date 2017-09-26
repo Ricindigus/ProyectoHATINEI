@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_margin="@dimen/margin10dp"
+    android:id="@+id/mod8_p2_ly"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border_layout_subpreguntas"
+    android:padding="@dimen/margin10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@+id/mod8_p2_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="@string/mod8_p2"
+        android:layout_marginBottom="@dimen/margin5dp"/>
+    <RadioGroup
+        android:id="@+id/mod8_p2_rg"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin10dp">
+        <RadioButton
+            android:id="@+id/mod8_p2_rb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mod8_p2_op1"/>
+        <RadioButton
+            android:id="@+id/mod8_p2_rb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mod8_p2_op2"/>
+        <RadioButton
+            android:id="@+id/mod8_p2_rb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mod8_p2_op3"/>
+        <RadioButton
+            android:id="@+id/mod8_p2_rb4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mod8_p2_op4"/>
+        <RadioButton
+            android:id="@+id/mod8_p2_rb5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mod8_p2_op5"/>
+    </RadioGroup>
+</LinearLayout>
+
+

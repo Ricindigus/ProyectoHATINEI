@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/dialog_mod5p25p26_lyt"
+        android:orientation="vertical"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="@drawable/border_layout_subpreguntas">
+        <TextView
+            android:id="@+id/dialog_mod5p25p26_txtp1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Motivos"
+            android:layout_marginTop="@dimen/margin10dp"/>
+        <EditText
+            android:id="@+id/dialog_mod5p25p26_edt1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:inputType="text"
+            android:paddingLeft="5dp"
+            android:maxLength="300"
+            android:layout_marginTop="@dimen/margin5dp"
+            android:background="@drawable/fondo_edit_text"/>
+    </LinearLayout>
+
+</LinearLayout>

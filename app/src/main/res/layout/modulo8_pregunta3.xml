@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:id="@+id/mod8_p3_ly"
+    android:padding="@dimen/margin10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin10dp"
+    android:background="@drawable/border_layout_subpreguntas"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@+id/mod8_p3_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="@string/mod8_p3"/>
+    <CheckBox
+        android:id="@+id/mod8_p3_ck1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mod8_p3_op1"
+        android:layout_margin="@dimen/margin5dp"/>
+    <CheckBox
+        android:id="@+id/mod8_p3_ck2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mod8_p3_op2"
+        android:layout_margin="@dimen/margin5dp"/>
+    <CheckBox
+        android:id="@+id/mod8_p3_ck3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mod8_p3_op3"
+        android:layout_margin="@dimen/margin5dp"/>
+    <CheckBox
+        android:id="@+id/mod8_p3_ck4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mod8_p3_op4"
+        android:layout_margin="@dimen/margin5dp"/>
+    <CheckBox
+        android:id="@+id/mod8_p3_ck5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mod8_p3_op5"
+        android:layout_margin="@dimen/margin5dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_margin="@dimen/margin5dp">
+        <CheckBox
+            android:id="@+id/mod8_p3_ck6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mod8_p3_op6"
+            android:layout_marginRight="@dimen/margin15dp"
+            />
+
+        <EditText
+            android:id="@+id/mod8_p3_edt"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:maxLength="300"
+            android:inputType="text"
+            android:background="@drawable/cajas_de_texto"
+            android:hint="@string/especifique"
+            android:paddingLeft="@dimen/margin5dp" />
+    </LinearLayout>
+</LinearLayout>
+

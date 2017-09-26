@@ -1,0 +1,720 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/layout_caratulaFragment"
+    tools:context="pe.gob.inei.encuestahabilidades.fragments.CaratulaFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/caratula_txtTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="CARÁTULA"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/icons"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:padding="@dimen/fab_margin"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/margin5dp"
+                android:layout_marginTop="@dimen/margin10dp"
+                android:layout_marginRight="@dimen/margin10dp"
+                android:layout_marginLeft="@dimen/margin10dp"
+                android:background="@drawable/caja_texto_redonda"
+                android:textColor="@color/accent"
+                android:text="Decreto Legislativo Nº 604 Ley de Organización y Funciones del INEI.
+Decreto Supremo Nº 043– 2001–PCM del Secreto Estadístico y Confidencialidad de la Información."
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fab_margin"
+                android:background="@drawable/borde_layout_preguntas"
+                android:orientation="vertical"
+                android:padding="@dimen/margin15dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin15dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:text="Cambio de Distrito" />
+                    <RadioGroup
+                        android:id="@+id/caratula_rgCambioDistrito"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/caratula_rbDistritoSi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/margin15dp"
+                            android:text="Si"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:buttonTint="@color/colorPrimaryDark"/>
+                        <RadioButton
+                            android:id="@+id/caratula_rbDistritoNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="No"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:buttonTint="@color/colorPrimaryDark"/>
+                    </RadioGroup>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:gravity="center"
+                    android:padding="@dimen/fab_margin"
+                    android:text="@string/caratula_loc"
+                    android:textColor="@color/icons"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/fab_margin"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:background="@drawable/borde_layout_preguntas">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/borde_layout_preguntas"
+                        android:gravity="center"
+                        android:padding="@dimen/fab_margin"
+                        android:text="@string/caratula_loc_ubicacion_geo"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="1dp"
+                            android:orientation="horizontal"
+                            android:background="@color/accent">
+                            <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorAccent"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/fab_margin"
+                                android:text="@string/caratula_loc_ubicacion_geo_departamento"
+                                android:textColor="@color/icons" />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:background="@drawable/fondo_spinner">
+                                <Spinner
+                                    android:id="@+id/caratula_spDepartamento"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:drawSelectorOnTop="true"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="1dp"
+                            android:orientation="horizontal"
+                            android:background="@color/accent">
+                            <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorAccent"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/fab_margin"
+                                android:text="@string/caratula_loc_ubicacion_geo_provincia"
+                                android:textColor="@color/icons" />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:background="@drawable/fondo_spinner">
+                                <Spinner
+                                    android:id="@+id/caratula_spProvincia"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:drawSelectorOnTop="true"
+                                    />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="1dp"
+                            android:orientation="horizontal"
+                            android:background="@color/accent">
+                            <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorAccent"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/fab_margin"
+                                android:text="@string/caratula_loc_ubicacion_geo_distrito"
+                                android:textColor="@color/icons" />
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/fondo_spinner">
+                                <Spinner
+                                    android:id="@+id/caratula_spDistrito"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:drawSelectorOnTop="true"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/borde_layout_preguntas"
+                        android:gravity="center"
+                        android:padding="@dimen/fab_margin"
+                        android:text="@string/caratula_loc_coordenadas"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="1dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="1dp"
+                            android:orientation="horizontal"
+                            android:background="@color/accent">
+
+                            <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorAccent"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/fab_margin"
+                                android:text="@string/caratula_loc_coordenadas_gps_latitud"
+                                android:textColor="@color/icons" />
+
+                            <TextView
+                                android:id="@+id/caratula_txtLatitud"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:paddingLeft="@dimen/margin10dp"
+                                android:background="@drawable/fondo_edit_text" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="1dp"
+                            android:orientation="horizontal"
+                            android:background="@color/accent">
+
+                            <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorAccent"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/fab_margin"
+                                android:text="@string/caratula_loc_coordenadas_gps_altitud"
+                                android:textColor="@color/icons"
+                                />
+
+                            <TextView
+                                android:id="@+id/caratula_txtAltitud"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:paddingLeft="@dimen/margin10dp"
+                                android:background="@drawable/fondo_edit_text" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="1dp"
+                            android:orientation="horizontal"
+                            android:background="@color/accent">
+
+                            <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorAccent"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/fab_margin"
+                                android:text="@string/caratula_loc_coordenadas_gps_longitud"
+                                android:textColor="@color/icons" />
+
+                            <TextView
+                                android:id="@+id/caratula_txtLongitud"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:paddingLeft="@dimen/margin10dp"
+                                android:background="@drawable/fondo_edit_text" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/caratula_btnGPS"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="CAPTURAR GPS"
+                        android:theme="@style/RaisedButtonDark" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/borde_layout_preguntas"
+                        android:gravity="center"
+                        android:padding="@dimen/fab_margin"
+                        android:text="@string/caratula_loc_ubicacion_muestral"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:focusableInTouchMode="true"
+                        android:id="@+id/caratula_lytUbicacion"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="1dp"
+                            android:orientation="horizontal"
+                            android:background="@color/accent">
+
+                            <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="1dp"
+                                android:background="@color/colorAccent"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/fab_margin"
+                                android:text="@string/caratula_loc_ubicacion_muestral_sector"
+                                android:textColor="@color/icons" />
+
+                            <EditText
+                                android:id="@+id/caratula_edtSector"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:inputType="text"
+                                android:paddingLeft="@dimen/margin10dp"
+                                android:imeOptions="flagNoExtractUi"
+                                android:background="@drawable/fondo_edit_text" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="1dp"
+                            android:orientation="horizontal"
+                            android:background="@color/accent">
+
+                            <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorAccent"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/fab_margin"
+                                android:text="@string/caratula_loc_ubicacion_muestral_area"
+                                android:textColor="@color/icons" />
+
+                            <EditText
+                                android:id="@+id/caratula_edtArea"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:inputType="text"
+                                android:paddingLeft="@dimen/margin10dp"
+                                android:background="@drawable/fondo_edit_text" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="1dp"
+                            android:orientation="horizontal"
+                            android:background="@color/accent">
+
+                            <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorAccent"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/fab_margin"
+                                android:text="@string/caratula_loc_ubicacion_muestral_zona"
+                                android:textColor="@color/icons" />
+
+                            <EditText
+                                android:id="@+id/caratula_edtZona"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:inputType="text"
+                                android:paddingLeft="@dimen/margin10dp"
+                                android:background="@drawable/fondo_edit_text" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="1dp"
+                            android:orientation="horizontal"
+                            android:background="@color/accent">
+
+                            <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorAccent"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/fab_margin"
+                                android:text="@string/caratula_loc_ubicacion_muestral_manzana"
+                                android:textColor="@color/icons" />
+
+                            <EditText
+                                android:id="@+id/caratula_edtManzana"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:inputType="text"
+                                android:paddingLeft="@dimen/margin10dp"
+                                android:background="@drawable/fondo_edit_text" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginBottom="@dimen/margin5dp"
+                            android:layout_marginTop="1dp"
+                            android:orientation="horizontal"
+                            android:background="@color/accent">
+
+                            <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorAccent"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/fab_margin"
+                                android:text="@string/caratula_loc_ubicacion_muestral_frente"
+                                android:textColor="@color/icons" />
+
+                            <EditText
+                                android:id="@+id/caratula_edtFrente"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:inputType="text"
+                                android:paddingLeft="@dimen/margin10dp"
+                                android:background="@drawable/fondo_edit_text" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:background="@color/colorAccent"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/fab_margin"
+                            android:text="@string/caratula_loc_direccion"
+                            android:textColor="@color/icons" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="20dp"
+                                android:layout_marginRight="1dp"
+                                android:gravity="center"
+                                android:text="Tipo Vía"
+                                android:textColor="@color/icons"
+                                android:background="@color/accent"/>
+
+                            <TextView
+                                android:layout_width="450dp"
+                                android:layout_height="20dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="Nombre de la Via"
+                                android:textColor="@color/icons"
+                                android:background="@color/accent"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:orientation="horizontal"
+                            android:focusableInTouchMode="true"
+                            android:id="@+id/caratula_lytDireccion">
+
+                            <LinearLayout
+                                android:layout_width="150dp"
+                                android:layout_height="30dp"
+                                android:layout_marginRight="1dp"
+                                android:background="@drawable/fondo_spinner">
+                                <Spinner
+                                    android:id="@+id/caratula_spTipoVia"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:entries="@array/array_tipo_via"
+                                    android:drawSelectorOnTop="true"/>
+                            </LinearLayout>
+
+                            <EditText
+                                android:id="@+id/caratula_edtNombreVia"
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_weight="1"
+                                android:inputType="text"
+                                android:paddingLeft="@dimen/margin10dp"
+                                android:background="@drawable/fondo_edit_text" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="20dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/caratula_loc_direccion_npuerta"
+                                android:textColor="@color/icons"
+                                android:background="@color/colorAccent"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="20dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/caratula_loc_direccion_block"
+                                android:textColor="@color/icons"
+                                android:background="@color/colorAccent"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="20dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/caratula_loc_direccion_interior"
+                                android:textColor="@color/icons"
+                                android:background="@color/colorAccent"/>
+
+                            <TextView
+                                android:id="@+id/textView"
+                                android:layout_width="0dp"
+                                android:layout_height="20dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/caratula_loc_direccion_piso"
+                                android:textColor="@color/icons"
+                                android:background="@color/colorAccent"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="20dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/caratula_loc_direccion_manzana"
+                                android:textColor="@color/icons"
+                                android:background="@color/colorAccent"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="20dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/caratula_loc_direccion_lote"
+                                android:textColor="@color/icons"
+                                android:background="@color/colorAccent"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="20dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/caratula_loc_direccion_km"
+                                android:textColor="@color/icons"
+                                android:background="@color/colorAccent"/>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/caratula_edtNPuerta"
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_weight="1"
+                                android:inputType="text"
+                                android:nextFocusForward="@+id/caratula_edtBlock"
+                                android:imeOptions="actionNext"
+                                android:paddingLeft="@dimen/margin10dp"
+                                android:background="@drawable/fondo_edit_text" />
+
+                            <EditText
+                                android:id="@+id/caratula_edtBlock"
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_weight="1"
+                                android:inputType="text"
+                                android:nextFocusForward="@+id/caratula_edtInterior"
+                                android:imeOptions="actionNext"
+                                android:paddingLeft="@dimen/margin10dp"
+                                android:background="@drawable/fondo_edit_text" />
+
+                            <EditText
+                                android:id="@+id/caratula_edtInterior"
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_weight="1"
+                                android:inputType="text"
+                                android:nextFocusForward="@+id/caratula_edtPiso"
+                                android:imeOptions="actionNext"
+                                android:paddingLeft="@dimen/margin10dp"
+                                android:background="@drawable/fondo_edit_text" />
+
+                            <EditText
+                                android:id="@+id/caratula_edtPiso"
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_weight="1"
+                                android:inputType="text"
+                                android:nextFocusForward="@+id/caratula_edtManzanaVia"
+                                android:imeOptions="actionNext"
+                                android:paddingLeft="@dimen/margin10dp"
+                                android:background="@drawable/fondo_edit_text" />
+
+                            <EditText
+                                android:id="@+id/caratula_edtManzanaVia"
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_weight="1"
+                                android:inputType="text"
+                                android:nextFocusForward="@+id/caratula_edtLote"
+                                android:imeOptions="actionNext"
+                                android:paddingLeft="@dimen/margin10dp"
+                                android:background="@drawable/fondo_edit_text" />
+
+                            <EditText
+                                android:id="@+id/caratula_edtLote"
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_weight="1"
+                                android:inputType="text"
+                                android:nextFocusForward="@+id/caratula_edtKm"
+                                android:imeOptions="actionNext"
+                                android:paddingLeft="@dimen/margin10dp"
+                                android:background="@drawable/fondo_edit_text" />
+
+                            <EditText
+                                android:id="@+id/caratula_edtKm"
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_weight="1"
+                                android:inputType="text"
+                                android:paddingLeft="@dimen/margin10dp"
+                                android:background="@drawable/fondo_edit_text" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/colorAccent"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/fab_margin"
+                        android:text="11. Referencia de la Dirección"
+                        android:textColor="@color/icons" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:orientation="horizontal">
+                        <EditText
+                            android:id="@+id/caratula_edtReferencia"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:inputType="text"
+                            android:paddingLeft="@dimen/margin10dp"
+                            android:background="@drawable/fondo_edit_text" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

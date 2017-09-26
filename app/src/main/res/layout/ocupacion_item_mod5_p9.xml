@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginRight="1dp"
+    android:layout_marginLeft="1dp"
+    android:id="@+id/mod5_p9_cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/mod5_p9_txtOcupacion"
+            android:gravity="center"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Ocupación"/>
+        <TextView
+            android:id="@+id/mod5_p9_txtOcupacionEspecifica"
+            android:gravity="center"
+            android:layout_weight="14"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Ocupación específica"/>
+        <TextView
+            android:id="@+id/mod5_p9_txtCantidadRequerida"
+            android:gravity="center"
+            android:layout_weight="4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Cantidad requerida"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="4">
+            <ImageView
+                android:id="@+id/mod5_p9_btnEditar"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:src="@drawable/editar"/>
+            <ImageView
+                android:id="@+id/mod5_p9_btnEliminar"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:src="@drawable/borrar"/>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

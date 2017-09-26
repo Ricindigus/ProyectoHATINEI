@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/mod8_layoutFragment4"
+    android:focusableInTouchMode="true"
+    tools:context="pe.gob.inei.encuestahabilidades.fragments.Modulo8Fragment4">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/txtCabecera"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/modulo8_nombre"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/icons"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:padding="@dimen/fab_margin"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:padding="@dimen/margin15dp"
+            android:background="@drawable/borde_layout_preguntas">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mod8_p1_sp4"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/fab_margin" />
+            <include layout="@layout/modulo8_pregunta1"/>
+            <include layout="@layout/modulo8_pregunta2"/>
+            <include layout="@layout/modulo8_pregunta3"/>
+            <include layout="@layout/modulo8_pregunta4"/>
+            <include layout="@layout/modulo8_pregunta5"/>
+            <include layout="@layout/modulo8_pregunta6"/>
+            <include layout="@layout/modulo8_pregunta7"/>
+            <include layout="@layout/modulo8_pregunta8"/>
+            <include layout="@layout/modulo8_pregunta9"/>
+            <include layout="@layout/modulo8_pregunta10"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

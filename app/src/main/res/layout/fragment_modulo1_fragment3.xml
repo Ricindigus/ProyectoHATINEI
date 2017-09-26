@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/mod1_layoutFragment3"
+    android:focusableInTouchMode="true"
+    tools:context="pe.gob.inei.encuestahabilidades.fragments.Modulo1Fragment3">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/txtCabecera"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/modulo1_nombre"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/icons"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:padding="@dimen/fab_margin"/>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include layout="@layout/modulo1_pregunta8"/>
+            <include layout="@layout/modulo1_pregunta9"/>
+            <include layout="@layout/modulo1_pregunta10"/>
+
+            <include layout="@layout/modulo1_pregunta11" />
+
+            <include layout="@layout/modulo1_pregunta12"/>
+            <include layout="@layout/layout_observaciones"
+                android:id="@+id/mod1_observaciones"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

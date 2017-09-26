@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/mod6_p2_lyt"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/fab_margin"
+    android:padding="@dimen/margin15dp"
+    android:background="@drawable/borde_layout_preguntas"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mod6_p2"
+        android:layout_marginBottom="@dimen/fab_margin"/>
+    <RadioGroup
+        android:id="@+id/mod6_p2_rgb"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin10dp">
+        <RadioButton
+            android:id="@+id/mod6_p2_rb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Si"/>
+        <RadioButton
+            android:id="@+id/mod6_p2_rb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"/>
+    </RadioGroup>
+    <LinearLayout
+        android:id="@+id/mod6_p2_lyt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin10dp"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin10dp"
+        android:background="@drawable/border_layout_subpreguntas">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/margin15dp"
+            android:text="Número de puestos de trabajo"
+            android:textColor="@color/primary_text" />
+
+        <EditText
+            android:id="@+id/mod6_p2_edt1"
+            android:focusableInTouchMode="true"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="@drawable/fondo_edit_text"
+            android:inputType="numberPassword"
+            android:maxLength="5"
+            android:layout_marginRight="30dp"/>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/margin15dp"
+            android:text="Porcentaje de puestos de trabajo"
+            android:textColor="@color/primary_text" />
+
+        <EditText
+            android:id="@+id/mod6_p2_edt2"
+            android:focusableInTouchMode="true"
+            android:inputType="numberPassword"
+            android:maxLength="3"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="@drawable/fondo_edit_text"
+            />
+    </LinearLayout>
+</LinearLayout>

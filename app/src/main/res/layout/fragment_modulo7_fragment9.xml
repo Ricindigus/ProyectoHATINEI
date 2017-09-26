@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/mod7_layoutFragment9"
+    android:focusableInTouchMode="true"
+    tools:context="pe.gob.inei.encuestahabilidades.fragments.Modulo7Fragment9">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/txtCabecera"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/modulo7_nombre"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/icons"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:padding="@dimen/fab_margin"/>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include layout="@layout/modulo7_pregunta20"/>
+            <include layout="@layout/modulo7_pregunta21"/>
+            <include layout="@layout/modulo7_pregunta22"/>
+            <include layout="@layout/modulo7_pregunta23"/>
+            <include layout="@layout/modulo7_pregunta24"/>
+            <include layout="@layout/modulo7_pregunta25"/>
+            <include layout="@layout/modulo7_pregunta26"/>
+            <include layout="@layout/modulo7_pregunta27"/>
+            <include layout="@layout/modulo7_pregunta28"/>
+            <include layout="@layout/modulo7_pregunta29"/>
+            <include layout="@layout/modulo7_pregunta30"/>
+            <include layout="@layout/modulo7_pregunta31"/>
+            <include layout="@layout/modulo7_pregunta32"/>
+            <include layout="@layout/modulo7_pregunta33"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

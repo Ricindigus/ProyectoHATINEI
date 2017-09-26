@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/mod4_layoutFragment1"
+    android:focusableInTouchMode="true"
+    tools:context="pe.gob.inei.encuestahabilidades.fragments.Modulo1Fragment1">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/txtCabecera"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/modulo4_nombre"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/icons"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:padding="@dimen/fab_margin"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/mod4_txtCabecera"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin5dp"
+                android:layout_marginRight="@dimen/margin10dp"
+                android:layout_marginLeft="@dimen/margin10dp"
+                android:layout_marginTop="@dimen/margin10dp"
+                android:text="Las preguntas de esta sección se refieren a como la empresa se percibe con respecto a los mercados en los cuales opera, y a cómo se compara a si mismo con otras empresas que producen bienes y servicios similares, o bien, con aquellos que son competidores de la organización."
+                android:background="@drawable/cajas_de_texto"/>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fab_margin">
+                <CheckBox
+                    android:id="@+id/mod4_cab_ckMismoInformante"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mismo_informante"/>
+                <TextView
+                    android:textColor="@color/icons"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorAccent"
+                    android:padding="@dimen/margin5dp"
+                    android:text="@string/nombre_informante"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:background="@drawable/cajas_de_texto">
+                    <EditText
+                        android:id="@+id/mod4_cab_edtApeYNom"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:paddingLeft="5dp"
+                        android:inputType="text"
+                        android:background="@drawable/fondo_edit_text"
+                        android:layout_margin="@dimen/margin5dp"/>
+                </LinearLayout>
+                <TextView
+                    android:textColor="@color/icons"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorAccent"
+                    android:padding="@dimen/margin5dp"
+                    android:text="@string/cargo_informante"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:background="@drawable/cajas_de_texto">
+                    <LinearLayout
+                        android:id="@+id/mod4_cab_lytFondoSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_margin="@dimen/margin5dp"
+                        android:focusableInTouchMode="true"
+                        android:background="@drawable/fondo_spinner">
+                        <Spinner
+                            android:id="@+id/mod4_cab_spCargo"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:drawSelectorOnTop="true"
+                            android:entries="@array/cargos" />
+                </LinearLayout>
+                </LinearLayout>
+                <EditText
+                    android:id="@+id/mod4_cab_edtEspecifiqueCargo"
+                    android:layout_marginTop="@dimen/margin15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:inputType="text"
+                    android:hint="@string/especifique"
+                    android:paddingLeft="@dimen/margin5dp"
+                    android:visibility="gone"
+                    android:background="@drawable/cajas_de_texto" />
+            </LinearLayout>
+            <include layout="@layout/modulo4_pregunta1"/>
+            <include layout="@layout/modulo4_pregunta2"/>
+            <include layout="@layout/modulo4_pregunta3"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

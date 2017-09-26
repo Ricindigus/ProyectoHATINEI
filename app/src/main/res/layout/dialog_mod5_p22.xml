@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/dialog_mod5p22_lyt"
+        android:orientation="vertical"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="@drawable/border_layout_subpreguntas">
+        <TextView
+            android:id="@+id/dialog_mod5p22_txtp1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Remuneración"
+            android:layout_marginTop="@dimen/margin10dp"/>
+        <EditText
+            android:id="@+id/dialog_mod5p22_edt"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:inputType="numberPassword"
+            android:paddingLeft="5dp"
+            android:maxLength="6"
+            android:background="@drawable/fondo_edit_text"/>
+        <TextView
+            android:id="@+id/dialog_mod5p22_txtp2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin10dp"
+            android:text="Tiempo pagado"/>
+        <LinearLayout
+            android:id="@+id/dialog_mod5p22_lytSp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/fondo_edit_text">
+            <Spinner
+                android:id="@+id/dialog_mod5p22_sp"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/Tiempo_pagado"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

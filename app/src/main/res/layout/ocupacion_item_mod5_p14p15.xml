@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginRight="@dimen/margin5dp"
+    android:layout_marginLeft="@dimen/margin5dp"
+    android:layout_marginTop="5dp"
+    android:id="@+id/item_mod5_p14p15_cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/item_mod5_p14p15_lyt"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:padding="@dimen/margin5dp">
+        <TextView
+            android:id="@+id/item_mod5_p14p15_txt"
+            android:gravity="center"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_margin="@dimen/margin5dp"
+            android:layout_height="match_parent"
+            android:text="Ocupación"/>
+        <LinearLayout
+            android:id="@+id/item_mod5_p14p15_lytSp"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:background="@drawable/fondo_spinner"
+            android:layout_margin="@dimen/margin5dp">
+            <Spinner
+                android:id="@+id/item_mod5_p14p15_sp"
+                android:gravity="center"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/cantidadTiempo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

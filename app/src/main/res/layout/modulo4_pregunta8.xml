@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:id="@+id/mod4_p8_ly"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/fab_margin"
+    android:padding="@dimen/margin15dp"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/borde_layout_preguntas"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mod4_p8"
+        android:layout_marginBottom="@dimen/fab_margin" />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mod4_p8_1"
+        android:layout_marginBottom="@dimen/fab_margin" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="@dimen/margin5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="@drawable/cabecera"
+                android:gravity="center"
+                android:text="Obstáculos"
+                android:textColor="@color/icons"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/cabecera"
+                android:gravity="center"
+                android:text="Orden de Importancia"
+                android:textColor="@color/icons"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/mod4_p8_ck1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin10dp"
+                android:layout_weight="5"
+                android:text="@string/mod4_p8_sp1" />
+
+            <LinearLayout
+                android:id="@+id/mod4_p8_ly1"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="2"
+                android:background="@drawable/caja_texto_redonda">
+
+                <Spinner
+                    android:id="@+id/mod4_p8_sp1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:entries="@array/importancia"
+                    android:text="Orden de Importancia"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/mod4_p8_ck2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin10dp"
+                android:layout_weight="5"
+                android:text="@string/mod4_p8_sp2" />
+
+            <LinearLayout
+                android:id="@+id/mod4_p8_ly2"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="2"
+                android:background="@drawable/caja_texto_redonda">
+
+                <Spinner
+                    android:id="@+id/mod4_p8_sp2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:entries="@array/importancia"
+                    android:text="Orden de Importancia"
+                    android:textAlignment="center" />/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/mod4_p8_ck3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin10dp"
+                android:layout_weight="5"
+                android:text="@string/mod4_p8_sp3" />
+
+            <LinearLayout
+                android:id="@+id/mod4_p8_ly3"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="2"
+                android:background="@drawable/caja_texto_redonda">
+
+                <Spinner
+                    android:id="@+id/mod4_p8_sp3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:entries="@array/importancia"
+                    android:text="Orden de Importancia"
+                    android:textAlignment="center" />/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/mod4_p8_ck4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin10dp"
+                android:layout_weight="5"
+                android:text="@string/mod4_p8_sp4" />
+
+            <LinearLayout
+                android:id="@+id/mod4_p8_ly4"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="2"
+                android:background="@drawable/caja_texto_redonda">
+
+                <Spinner
+                    android:id="@+id/mod4_p8_sp4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:entries="@array/importancia"
+                    android:text="Orden de Importancia"
+                    android:textAlignment="center" />/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/mod4_p8_ck5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin10dp"
+                android:layout_weight="5"
+                android:text="@string/mod4_p8_sp5" />
+
+            <LinearLayout
+                android:id="@+id/mod4_p8_ly5"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="2"
+                android:background="@drawable/caja_texto_redonda">
+
+                <Spinner
+                    android:id="@+id/mod4_p8_sp5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:entries="@array/importancia"
+                    android:text="Orden de Importancia"
+                    android:textAlignment="center" />/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/mod4_p8_ck6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin10dp"
+                android:layout_weight="5"
+                android:text="@string/mod4_p8_sp6" />
+
+            <LinearLayout
+                android:id="@+id/mod4_p8_ly6"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="2"
+                android:background="@drawable/caja_texto_redonda">
+
+                <Spinner
+                    android:id="@+id/mod4_p8_sp6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:entries="@array/importancia"
+                    android:text="Orden de Importancia"
+                    android:textAlignment="center" />/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/mod4_p8_ck7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin10dp"
+                android:layout_weight="5"
+                android:text="@string/mod4_p8_sp7" />
+
+            <LinearLayout
+                android:id="@+id/mod4_p8_ly7"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="2"
+                android:background="@drawable/caja_texto_redonda">
+
+                <Spinner
+                    android:id="@+id/mod4_p8_sp7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:entries="@array/importancia"
+                    android:text="Orden de Importancia"
+                    android:textAlignment="center" />/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/mod4_p8_ck8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin10dp"
+                android:layout_weight="5"
+                android:text="@string/mod4_p8_sp8" />
+
+            <LinearLayout
+                android:id="@+id/mod4_p8_ly8"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="2"
+                android:background="@drawable/caja_texto_redonda">
+
+                <Spinner
+                    android:id="@+id/mod4_p8_sp8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:entries="@array/importancia"
+                    android:text="Orden de Importancia"
+                    android:textAlignment="center" />/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/mod4_p8_ck9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin10dp"
+                android:layout_weight="5"
+                android:text="@string/mod4_p8_sp9" />
+
+            <LinearLayout
+                android:id="@+id/mod4_p8_ly9"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="2"
+                android:background="@drawable/caja_texto_redonda">
+
+                <Spinner
+                    android:id="@+id/mod4_p8_sp9"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:entries="@array/importancia"
+                    android:text="Orden de Importancia"
+                    android:textAlignment="center" />/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/mod4_p8_ck10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin10dp"
+                android:layout_weight="5"
+                android:text="@string/mod4_p8_sp10" />
+
+            <LinearLayout
+                android:id="@+id/mod4_p8_ly10"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="2"
+                android:background="@drawable/caja_texto_redonda">
+
+                <Spinner
+                    android:id="@+id/mod4_p8_sp10"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:entries="@array/importancia"
+                    android:text="Orden de Importancia"
+                    android:textAlignment="center" />/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/mod4_p8_ck11"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin10dp"
+                android:layout_weight="5"
+                android:text="@string/mod4_p8_sp11" />
+
+            <LinearLayout
+                android:id="@+id/mod4_p8_ly11"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="2"
+                android:background="@drawable/caja_texto_redonda">
+
+                <Spinner
+                    android:id="@+id/mod4_p8_sp11"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:entries="@array/importancia"
+                    android:text="Orden de Importancia"
+                    android:textAlignment="center" />/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/mod4_p8_ck12"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin10dp"
+                android:layout_weight="5"
+                android:text="@string/mod4_p8_sp12" />
+
+            <LinearLayout
+                android:id="@+id/mod4_p8_ly12"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="2"
+                android:background="@drawable/caja_texto_redonda">
+
+                <Spinner
+                    android:id="@+id/mod4_p8_sp12"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:entries="@array/importancia"
+                    android:text="Orden de Importancia"
+                    android:textAlignment="center" />/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/mod4_p8_ck13"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin10dp"
+                android:layout_weight="5"
+                android:text="@string/mod4_p8_sp13" />
+
+            <LinearLayout
+                android:id="@+id/mod4_p8_ly13"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="2"
+                android:background="@drawable/caja_texto_redonda">
+
+                <Spinner
+                    android:id="@+id/mod4_p8_sp13"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:entries="@array/importancia"
+                    android:text="Orden de Importancia"
+                    android:textAlignment="center" />/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/mod4_p8_ck14"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin10dp"
+                android:layout_weight="5"
+                android:text="@string/mod4_p8_sp14" />
+
+            <LinearLayout
+                android:id="@+id/mod4_p8_ly14"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="2"
+                android:background="@drawable/caja_texto_redonda">
+
+                <Spinner
+                    android:id="@+id/mod4_p8_sp14"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:entries="@array/importancia"
+                    android:text="Orden de Importancia"
+                    android:textAlignment="center" />/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/mod4_p8_ck15"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin10dp"
+                android:layout_weight="5"
+                android:text="@string/mod4_p8_sp15" />
+
+            <LinearLayout
+                android:id="@+id/mod4_p8_ly15"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="2"
+                android:background="@drawable/caja_texto_redonda">
+
+                <Spinner
+                    android:id="@+id/mod4_p8_sp15"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:entries="@array/importancia"
+                    android:text="Orden de Importancia"
+                    android:textAlignment="center" />/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/mod4_p8_ck16"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin10dp"
+                android:layout_weight="5"
+                android:text="@string/mod4_p8_sp16" />
+
+            <LinearLayout
+                android:id="@+id/mod4_p8_ly16"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="2"
+                android:background="@drawable/fondo_spinner"
+                >
+                <Spinner
+                    android:id="@+id/mod4_p8_sp16"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:drawSelectorOnTop="true"
+                    android:entries="@array/importancia"
+                    android:textAlignment="center"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/mod4_p8_ck17"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin10dp"
+                    android:text="@string/mod4_p8_sp17" />
+
+                <EditText
+                    android:id="@+id/mod4_p8_edt"
+                    android:visibility="gone"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:focusableInTouchMode="true"
+                    android:layout_weight="3"
+                    android:background="@drawable/cajas_de_texto"
+                    android:hint="@string/especifique"
+                    android:inputType="text"
+                    android:maxLength="200"
+                    android:paddingLeft="@dimen/margin5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mod4_p8_ly17"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="@dimen/margin15dp"
+                android:layout_weight="2"
+                android:background="@drawable/caja_texto_redonda">
+
+                <Spinner
+                    android:id="@+id/mod4_p8_sp17"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:focusableInTouchMode="true"
+                    android:drawSelectorOnTop="true"
+                    android:entries="@array/importancia"
+                    android:text="Orden de Importancia"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/mod4_p8_ck18"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin10dp"
+                android:layout_weight="5"
+                android:text="@string/mod4_p8_sp18" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

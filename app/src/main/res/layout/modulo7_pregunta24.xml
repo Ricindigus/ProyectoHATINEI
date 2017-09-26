@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:id="@+id/mod7_p24_ly"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/fab_margin"
+    android:padding="@dimen/fab_margin"
+    android:background="@drawable/borde_layout_preguntas"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mod7_p24"
+        android:layout_marginBottom="@dimen/fab_margin" />
+    <RadioGroup
+        android:id="@+id/mod7_p24_rgb"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/mod7_p24_rb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Si"
+            android:layout_marginRight="30dp"/>
+        <RadioButton
+            android:id="@+id/mod7_p24_rb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"/>
+    </RadioGroup>
+        <LinearLayout
+        android:id="@+id/mod7_p24_lyt"
+        android:padding="@dimen/margin10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="¿Cuál entidad?" />
+
+            </LinearLayout>
+
+
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="1dp"
+            android:gravity="center_vertical">
+
+
+            <CheckBox
+                android:id="@+id/mod7_p24_ck1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1."
+                android:layout_margin="@dimen/margin5dp"/>
+            <EditText
+                android:id="@+id/mod7_p24_edt1"
+                android:inputType="text"
+                android:maxLength="300"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/fondo_edit_text"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="1dp"
+            android:gravity="center_vertical">
+            <CheckBox
+                android:id="@+id/mod7_p24_ck2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2."
+                android:layout_margin="@dimen/margin5dp"/>
+            <EditText
+                android:id="@+id/mod7_p24_edt2"
+                android:inputType="text"
+                android:maxLength="300"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/fondo_edit_text"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="1dp"
+            android:gravity="center_vertical">
+            <CheckBox
+                android:id="@+id/mod7_p24_ck3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3."
+                android:layout_margin="@dimen/margin5dp"/>
+            <EditText
+                android:id="@+id/mod7_p24_edt3"
+                android:inputType="text"
+                android:maxLength="300"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/fondo_edit_text"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
