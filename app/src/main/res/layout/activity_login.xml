@@ -133,6 +133,13 @@
                     android:background="@drawable/boton_ingresar"
                     android:text="Ingresar"
                     android:textColor="@color/icons" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Version 2.1"
+                    android:gravity="center"
+                    android:textColor="@color/icons"
+                    android:padding="@dimen/margin15dp"/>
             </LinearLayout>
         </LinearLayout>
     </FrameLayout>

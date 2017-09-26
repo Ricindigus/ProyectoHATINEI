@@ -560,7 +560,7 @@ public class Modulo1Fragment3 extends Fragment {
                 modulo1 = data.getModulo1(idempresa);
                 if(!modulo1.getC1_P12_CCDD().equals("")){
                     final String[] provincias = context.getResources().getStringArray(arreglosDepartamentos[Integer.parseInt(modulo1.getC1_P12_CCDD())-1]);
-                    String idUbi = checkDigito(Integer.parseInt(modulo1.getC1_P12_CCDD())) + checkDigito(Integer.parseInt(modulo1.getC1_P12_CCPP()));
+                    final String idUbi = checkDigito(Integer.parseInt(modulo1.getC1_P12_CCDD())) + checkDigito(Integer.parseInt(modulo1.getC1_P12_CCPP()));
                     final ArrayList<String> distritos = data.getUbigeos(idUbi);
                     getActivity().runOnUiThread(new Runnable() {
                         @Override
@@ -568,9 +568,14 @@ public class Modulo1Fragment3 extends Fragment {
                             cargarSpinerDepartamentos(departamentos);
                             cargarSpinerProvincias(provincias);
                             cargarSpinerDistritos(distritos);
+
                             spDepartamentoP12.setSelection(Integer.parseInt(modulo1.getC1_P12_CCDD()));
                             spProvinciaP12.setSelection(Integer.parseInt(modulo1.getC1_P12_CCPP()));
-                            spDistritoP12.setSelection(Integer.parseInt(modulo1.getC1_P12_CCDI()));
+                            spDistritoP12.setSelection(obtenerPosDistrito(idUbi,Integer.parseInt(modulo1.getC1_P12_CCDI())));
+//
+//                            spDepartamentoP12.setSelection(Integer.parseInt(modulo1.getC1_P12_CCDD()));
+//                            spProvinciaP12.setSelection(Integer.parseInt(modulo1.getC1_P12_CCPP()));
+//                            spDistritoP12.setSelection(Integer.parseInt(modulo1.getC1_P12_CCDI()));
                             cargarDatos();
                         }
                     });
@@ -686,7 +691,8 @@ public class Modulo1Fragment3 extends Fragment {
             C1_P12_KM  = edt8P12.getText().toString();
             C1_P12_CCDD  = spDepartamentoP12.getSelectedItemPosition();
             C1_P12_CCPP  = spProvinciaP12.getSelectedItemPosition();
-            C1_P12_CCDI  = spDistritoP12.getSelectedItemPosition();
+            String idUbica = checkDigito(spDepartamentoP12.getSelectedItemPosition()) + checkDigito(spProvinciaP12.getSelectedItemPosition());
+            C1_P12_CCDI  = obtenerCCDI(spDistritoP12.getSelectedItemPosition(),idUbica);
         } else{
             C1_P12_TIPVIA = spTipoVia.getSelectedItemPosition();
             C1_P12_NOMVIA = edt1P12.getText().toString();
@@ -702,6 +708,84 @@ public class Modulo1Fragment3 extends Fragment {
             C1_P12_CCDI  = 0;
         }
         OBS_MOD_I = edtObservaciones.getText().toString();
+    }
+    public int obtenerPosDistrito(String ubi, int cod){
+        int posicion = 0;
+        if(ubi.equals("0907")){
+            int[] codigos = {1 ,2 , 3, 4, 5, 6, 7, 9, 10, 11, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22};
+            for (int i = 0; i < codigos.length; i++) {
+                if(codigos[i] == cod){ posicion = i + 1;break;}
+            }
+        }else if(ubi.equals("1003")){
+            int[] codigos = {1, 7, 11, 13, 16, 17, 21, 22, 23};
+            for (int i = 0; i < codigos.length; i++) {
+                if(codigos[i] == cod){ posicion = i+ 1;break;}
+            }
+        }else if(ubi.equals("1201")){
+            int[] codigos = {1, 4, 5, 6, 7, 8, 11, 12, 13, 14, 16, 17, 19, 20, 21, 22, 24, 25, 26, 27, 28, 29, 30, 32, 33, 34, 35, 36};
+            for (int i = 0; i < codigos.length; i++) {
+                if(codigos[i] == cod){ posicion = i+ 1;break;}
+            }
+        }else if(ubi.equals("1206")){
+            int[] codigos = {1, 2,3,5,7,8,9,99};
+            for (int i = 0; i < codigos.length; i++) {
+                if(codigos[i] == cod){ posicion = i+ 1;break;}
+            }
+        }else if(ubi.equals("1306")){
+            int[] codigos = {1,2,4,5,6,8,10,11,13,14};
+            for (int i = 0; i < codigos.length; i++) {
+                if(codigos[i] == cod){ posicion = i+ 1;break;}
+            }
+        }else  if(ubi.equals("1601")){
+            int[] codigos = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14};
+            for (int i = 0; i < codigos.length; i++) {
+                if(codigos[i] == cod){ posicion = i+ 1;break;}
+            }
+        }else if(ubi.equals("1602")){
+            int[] codigos = {1, 2, 5, 6, 10, 11};
+            for (int i = 0; i < codigos.length; i++) {
+                if(codigos[i] == cod){ posicion = i+ 1;break;}
+            }
+        }else if(ubi.equals("2001")){
+            int[] codigos = {1,4,5,7,8,9,10,11,14,15};
+            for (int i = 0; i < codigos.length; i++) {
+                if(codigos[i] == cod){ posicion = i+ 1;break;}
+            }
+        }else{
+            posicion = cod;
+        }
+        return posicion;
+    }
+    public int obtenerCCDI(int pos, String ubi){
+        int codigo = 0;
+        if(ubi.equals("0907")){
+            int[] codigos = {1 ,2 , 3, 4, 5, 6, 7, 9, 10, 11, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22};
+            codigo = codigos[pos-1];
+        }else if(ubi.equals("1003")){
+            int[] codigos = {1, 7, 11, 13, 16, 17, 21, 22, 23};
+            codigo = codigos[pos-1];
+        }else if(ubi.equals("1201")){
+            int[] codigos = {1, 4, 5, 6, 7, 8, 11, 12, 13, 14, 16, 17, 19, 20, 21, 22, 24, 25, 26, 27, 28, 29, 30, 32, 33, 34, 35, 36};
+            codigo = codigos[pos-1];
+        }else if(ubi.equals("1206")){
+            int[] codigos = {1, 2,3,5,7,8,9,99};
+            codigo = codigos[pos-1];
+        }else if(ubi.equals("1306")){
+            int[] codigos = {1,2,4,5,6,8,10,11,13,14};
+            codigo = codigos[pos-1];
+        }else  if(ubi.equals("1601")){
+            int[] codigos = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14};
+            codigo = codigos[pos-1];
+        }else if(ubi.equals("1602")){
+            int[] codigos = {1, 2, 5, 6, 10, 11};
+            codigo = codigos[pos-1];
+        }else if(ubi.equals("2001")){
+            int[] codigos = {1,4,5,7,8,9,10,11,14,15};
+            codigo = codigos[pos-1];
+        }else{
+            codigo = pos;
+        }
+        return codigo;
     }
     public void guardarDatos(){
         data = new Data(context);
