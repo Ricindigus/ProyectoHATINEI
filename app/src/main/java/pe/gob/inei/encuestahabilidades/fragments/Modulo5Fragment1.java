@@ -562,6 +562,55 @@ public class Modulo5Fragment1 extends Fragment {
     public void guardarDatos() {
         data = new Data(context);
         data.open();
+
+        if (data.existeModulo6(idempresa)){
+            if ( C5_P1_2_1.equals("0")){
+                ContentValues contentValue = new ContentValues(1);
+                contentValue.put(SQLConstantes.MODULO6_P3_2_1, "");
+                data.actualizarModulo6(idempresa, contentValue);
+            }
+            if ( C5_P1_2_2.equals("0")){
+                ContentValues contentValue = new ContentValues(1);
+                contentValue.put(SQLConstantes.MODULO6_P3_2_2, "");
+                data.actualizarModulo6(idempresa, contentValue);
+            }
+            if ( C5_P1_2_3.equals("0")){
+                ContentValues contentValue = new ContentValues(1);
+                contentValue.put(SQLConstantes.MODULO6_P3_2_3, "");
+                data.actualizarModulo6(idempresa, contentValue);
+            }
+            if ( C5_P1_2_4.equals("0")){
+                ContentValues contentValue = new ContentValues(1);
+                contentValue.put(SQLConstantes.MODULO6_P3_2_4, "");
+                data.actualizarModulo6(idempresa, contentValue);
+            }
+            if ( C5_P1_2_5.equals("0")){
+                ContentValues contentValue = new ContentValues(1);
+                contentValue.put(SQLConstantes.MODULO6_P3_2_5, "");
+                data.actualizarModulo6(idempresa, contentValue);
+            }
+            if ( C5_P1_2_6.equals("0")){
+                ContentValues contentValue = new ContentValues(1);
+                contentValue.put(SQLConstantes.MODULO6_P3_2_6, "");
+                data.actualizarModulo6(idempresa, contentValue);
+            }
+            if ( C5_P1_2_7.equals("0")){
+                ContentValues contentValue = new ContentValues(1);
+                contentValue.put(SQLConstantes.MODULO6_P3_2_7, "");
+                data.actualizarModulo6(idempresa, contentValue);
+            }
+            if ( C5_P1_2_8.equals("0")){
+                ContentValues contentValue = new ContentValues(1);
+                contentValue.put(SQLConstantes.MODULO6_P3_2_8, "");
+                data.actualizarModulo6(idempresa, contentValue);
+            }
+            if ( C5_P1_2_9.equals("0")){
+                ContentValues contentValue = new ContentValues(1);
+                contentValue.put(SQLConstantes.MODULO6_P3_2_9, "");
+                data.actualizarModulo6(idempresa, contentValue);
+            }
+
+        }
         if (data.existeModulo5(idempresa)) {
             ContentValues contentValues = new ContentValues(478);
             contentValues.put(SQLConstantes.MODULO5_P0_0, C5_P0_0 + "");
